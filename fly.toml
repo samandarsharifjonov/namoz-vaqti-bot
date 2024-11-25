@@ -1,0 +1,10 @@
+app = "namoz-vati-bot" # Fly.io ilovangiz nomini yozing
+
+[build]
+image = "dart:latest" # Docker image (Dart uchun tayyor)
+
+[env]
+BOT_TOKEN = "7971765646:AAHTr_6QnG9Cfm9q8IL2gzTAiqC7WELeS1E" # Environment variable (fly secrets orqali sozlash kerak)
+
+[experimental]
+cmd = ["dart", "run", "bin/namoz_vaqtlari_bot.dart"] # Botni ishga tushirish komandasi
